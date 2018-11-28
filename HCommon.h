@@ -1,0 +1,15 @@
+#ifndef HCOMMON_H
+#define HCOMMON_H
+
+#define EXCEPTION_WRONG_INDEX                   100
+#define EXCEPTION_WRONG_INDEX_INTERSECTION      101
+#define EXCEPTION_DIFF_WRONG_INDEX              102
+#define EXCEPTION_DIFF_WRONG_VALUE              103
+#define EXCEPTION_INDEX_BRACKET_WRONG           104
+#define EXCEPTION_HSET_LEN_WRONG                105
+#define EXCEPTION_HSET_CONVERT_WRONG            106
+#define EXCEPTION_SORT5_RULE_WRONG_INDEX_PARANTHESIS    107
+
+#define FILE_RAWDATA    "rawdata.txt"
+
+#endif // HCOMMON_H
