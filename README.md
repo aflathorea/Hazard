@@ -2,7 +2,7 @@
 Win a loto 6/49.<br>
 The algorithm has 2 ideas:<br>
 1. Rule 451, which says, the sets cannot combine infinitely and the combinations follow a normal distribution.<br>
-2. Neighours are defined other sets having in common 5 elements with current one. The sets having a big number of neighbours are favorites for winning.<br>
+2. Neighbours are defined other sets having in common 5 elements with current one. The sets having a big number of neighbours are favorites for winning.<br>
 Please read hazard.pdf to understand the system.<br>
 <br>
 The application is using Qt. You need to install the Qt:<br>
