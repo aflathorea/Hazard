@@ -5,7 +5,7 @@
 
 using namespace std::chrono;
 
-void h55All()
+void h55History()
 {
     printf("exec55_01(). start.\n");
 
@@ -32,7 +32,7 @@ void h55All()
     printf("exec55_01(). end.\n");
 }
 
-void h55One()
+void h55Forecast()
 {
     printf("exec55_02(). start.\n");
 
@@ -64,7 +64,7 @@ void h55One()
 
 }
 
-void h55History()
+void h55All()
 {
     printf("exec55_03(). start.\n");
 
@@ -111,7 +111,7 @@ int main(int argc, char *argv[])
 
     if(bOne)
     {
-        h55One();
+        h55Forecast();
     }
 
     high_resolution_clock::time_point tEnd = high_resolution_clock::now();
