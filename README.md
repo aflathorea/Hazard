@@ -8,7 +8,7 @@ In practice the sets having a big number of neighbours are favorites for winning
 Please read hazard.pdf to understand the system.<br>
 <br>
 The application is written using C++11, so can be compiled with make.<br>
-TO run the application, in the same directory, should be the file: rawdata.txt.<br>
+To run the application, in the same directory, should be the file: rawdata.txt.<br>
 The file should have, at least, 10 sets.<br>
 <br>
 Running options:<br>
