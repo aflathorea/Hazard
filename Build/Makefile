@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/horea/Documents/qt_projects/Hazard02
+CMAKE_SOURCE_DIR = /home/horea/Downloads/Hazard-master/Source
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/horea/Documents/qt_projects/build-Hazard02-Desktop-Default
+CMAKE_BINARY_DIR = /home/horea/Downloads/Hazard-master/Build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,9 +80,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/horea/Documents/qt_projects/build-Hazard02-Desktop-Default/CMakeFiles /home/horea/Documents/qt_projects/build-Hazard02-Desktop-Default/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/horea/Downloads/Hazard-master/Build/CMakeFiles /home/horea/Downloads/Hazard-master/Build/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/horea/Documents/qt_projects/build-Hazard02-Desktop-Default/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/horea/Downloads/Hazard-master/Build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
