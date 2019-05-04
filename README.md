@@ -18,13 +18,11 @@ Produces the output: H55_02.YYYY-MM-DD.txt. This is a summary file which lists a
 A horizon means a group of sets having same statistic, 451 by example.<br>
 There are others files which contain the sets for each branch.<br>
 If you do not know what to choose choose the file 451 and the firsts sets from the file.<br>
-
 >hazard h<br>
 This option does history analysis for last set. The run takes 5 minutes.<br>
 Produces the output: H55_01.YYYY-MM-DD.txt.<br>
 The rawdata.txt should contain 11 sets. It compares the 11th set against the others 10.<br>
 Use this option to check the accuracy of your predictions.
-
 >hazard a<br>
 This option does history analysis for all sets. The run takes 1 hour.<br>
 Produces the output: H55_03.YYYY-MM-DD.txt.<br>
