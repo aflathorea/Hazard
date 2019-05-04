@@ -1,5 +1,5 @@
 # Hazard
-Win a loto 6/49.<br>
+Win at loto 6/49.<br>
 The algorithm has 2 ideas:<br>
 1. Rule 451, which says, the sets cannot combine infinitely and the combinations follow a normal distribution.
 The combination 451 has the biggest chances to win. There is a picture in Docs/hazard_451.png which explains what means 451.<br>
