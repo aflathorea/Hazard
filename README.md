@@ -5,7 +5,7 @@ The algorithm has 2 ideas:<br>
 2. Neighbours are defined other sets having in common 5 elements with current one. The sets having a big number of neighbours are favorites for winning.<br>
 Please read hazard.pdf to understand the system.<br>
 <br>
-The application is written using C++11 and can be compiled with make.
+The application is written using C++11 and can be compiled with make.<br>
 In the app dir should be the file: rawdata.txt. The file should have, at least, the lasts 10 sets.<br>
 Run Hazard app<br>
 H55_HIST_04.YYYY-MM-DD.txt contains the analysis for the last set, in the case there are 11 sets in rawdata.txt file.<br>
