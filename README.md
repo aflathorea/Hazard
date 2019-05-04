@@ -26,4 +26,10 @@ Use this option to check the accuracy of your predictions.<br>
 >hazard a<br>
 This option does history analysis for all sets. The run takes 1 hour.<br>
 Produces the output: H55_03.YYYY-MM-DD.txt.<br>
-Makes the same thing like previous option but for all the sets in rawdata.txt
+Makes the same thing like previous option but for all the sets in rawdata.txt<br>
+<br>
+To compile the project:<br>
+1. Move into dir Build<br>
+2. cmake ./../Source<br>
+3. make<br>
+
