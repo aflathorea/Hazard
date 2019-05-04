@@ -16,7 +16,7 @@ Running options:<br>
 This option does forecast. The run takes 5 minutes.<br>
 Produces the output: H55_02.YYYY-MM-DD.txt. This is a summary file which lists all the horizons.<br>
 A horizon means a group of sets having same statistic, 451 by example.<br>
-There are others files which contain the sets for each branch.<br>
+There are others files which contain the sets for each horizon.<br>
 If you do not know what to choose, choose the file H55_NEXT.YYYY-MM-DD_4510.txt and the firsts sets from the file.<br>
 >hazard h<br>
 This option does history analysis for last set. The run takes 5 minutes.<br>
