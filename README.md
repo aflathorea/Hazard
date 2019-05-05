@@ -28,8 +28,11 @@ This option does history analysis for all sets. The run takes 1 hour.<br>
 Produces the output: H55_03.YYYY-MM-DD.txt.<br>
 Makes the same thing like previous option but for all the sets in rawdata.txt<br>
 <br>
+The application was developed with QTCreator, if you have installed QTCreator open the file Source/CMakeLists.txt.<br>
 To compile the project:<br>
-1. Move into dir Build<br>
-2. cmake ./../Source<br>
-3. make<br>
+1. Open a terminal/command prompt.<br>
+2. Navigate to Build directory. Now the current directory is Build.<br>
+3. cmake ./../Source<br>
+4. make<br>
+
 
