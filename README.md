@@ -7,7 +7,7 @@ The combination 451 has the biggest chances to win. There is a picture in Docs/h
 In practice the sets having a big number of neighbours are favorites for winning.<br>
 Please read hazard.pdf to understand the system.<br>
 <br>
-The application is written using C++11, so can be compiled cross platform, using cmake/make.<br>
+The application is written using C++11, so can be compiled platform independent, using cmake/make.<br>
 To run the application, in the same directory, should be the file: rawdata.txt.<br>
 The file should have, at least, 10 sets.<br>
 <br>
