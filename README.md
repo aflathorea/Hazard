@@ -3,11 +3,11 @@ Win at loto 6/49.<br>
 The algorithm has 2 ideas:<br>
 1. Rule 451, which says, the sets cannot combine infinitely and the combinations follow a normal distribution.
 The combination 451 has the biggest chances to win. There is a picture in Docs/hazard_451.png which explains what means 451.<br>
-2. Neighbours are sets having in common 5 elements. A winning set of 6 has arond 250 sets of 5 elements.
+2. Neighbours are sets having in common 5 elements. A winning set of 6 has around 250 sets of 5 elements.
 In practice the sets having a big number of neighbours are favorites for winning.<br>
 Please read hazard.pdf to understand the system.<br>
 <br>
-The application is written using C++11, so can be compiled with make.<br>
+The application is written using C++11, so can be compiled cross platform, using cmake/make.<br>
 To run the application, in the same directory, should be the file: rawdata.txt.<br>
 The file should have, at least, 10 sets.<br>
 <br>
