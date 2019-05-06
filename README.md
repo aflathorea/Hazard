@@ -1,4 +1,12 @@
 # Hazard
+How to win at loto 6/49, the easy way:<br>
+1. Download the application from release<br>
+2. Download the rawdata.txt in the same directory with the application. You can find rawdata.txt in Build, Docs, Source directories.<br>
+3. Fill the rawdata.txt with sets corresponding to your lotery.
+4. Run the application<br>
+5. Open the file H55_NEXT.YYYY-MM-DD_4510.txt and select some sets from the top of the file.
+<br>
+
 Win at loto 6/49.<br>
 The algorithm has 2 ideas:<br>
 1. Rule 451, which says, the sets cannot combine infinitely and the combinations follow a normal distribution.
