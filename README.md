@@ -23,16 +23,7 @@ This option does history analysis for last set. The run takes 5 minutes.<br>
 Produces the output: H55_01.YYYY-MM-DD.txt.<br>
 The rawdata.txt should contain 11 sets. It compares the 11th set against the others 10.<br>
 Use this option to check the accuracy of your predictions.<br>
->hazard a<br>
-This option does history analysis for all sets. The run takes 1 hour.<br>
-Produces the output: H55_03.YYYY-MM-DD.txt.<br>
-Makes the same thing like previous option but for all the sets in rawdata.txt<br>
 <br>
-The application was developed with QTCreator, if you have installed QTCreator open the file Source/CMakeLists.txt.<br>
-To compile the project:<br>
-1. Open a terminal/command prompt.<br>
-2. Navigate to Build directory. Now the current directory is Build.<br>
-3. cmake ./../Source<br>
-4. make<br>
+The application was written with Visual Studio Express 2012.
 
 
