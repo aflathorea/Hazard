@@ -112,7 +112,7 @@ void H55Horizon::neighbours()
 {
     string sStat = statToStringLine(mStat);
 
-    mLog->write(toStringFormatS2("H55Horizon::neighbours(%s. [%s])\n", mParent, sStat));
+    mLog->write(toStringFormatS2("H55Horizon::neighbours(%s. %s)\n", mParent, sStat));
 
     for(HSET hset6 : mSerie6)
     {
@@ -537,8 +537,12 @@ void H55Horizon::log05(const string &date) const
 
     HLog fout(sFileName);
 
+    char sText[SPEEDLOW_SPRINTF_LEN] = {};
+    sprintf(sText, "H55Horizon::log05(%s)\n", sFileName.data());
+    printf(sText);
+
     string sStat = statToStringLine(mStat);
-    fout.write(sStat + "\n");
+    fout.write(sStat + "\n", false);
     fout.write(string(H55_MSG_HEADER), false);
 
     int index = 0;

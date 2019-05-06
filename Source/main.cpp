@@ -27,6 +27,7 @@ void h55History()
 
     H55UT01 h55UT01(&log, history, last, lastDate, false);
     h55UT01.run();
+    log.separator();
     h55UT01.log04();
 
     printf("exec55_01(). end.\n");
@@ -38,8 +39,7 @@ void h55Forecast()
 
     HSERIE history;
     string lastDate;
-    HSET last;
-    readSerieWithoutLast(history, last, lastDate);
+    readSerieFull(history, lastDate);
 
     char sLogFileName[64] = {};
     sprintf(sLogFileName, "H55_02.%s.txt", lastDate.data());
@@ -49,19 +49,13 @@ void h55Forecast()
     log.separator();
     log.write(hserieToString(history));
     log.separator();
-    log.write(hsetToString(last) + "\n");
-    log.separator();
-
-    H55UT01 h55UT01(&log, history, last, lastDate, false);
-    h55UT01.run();
-    h55UT01.log04();
 
     H55 h55(&log, history, lastDate);
     h55.run();
+    log.separator();
     h55.log05();
 
     printf("exec55_02(). end.\n");
-
 }
 
 void h55All()
