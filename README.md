@@ -1,6 +1,6 @@
 # Hazard
 How to win at loto 6/49, the easy way:<br>
-1. Download the application from release<br>
+1. Download the application from releases.<br>
 2. Download the rawdata.txt in the same directory with the application. You can find rawdata.txt in Build, Docs, Source directories.<br>
 3. Fill the rawdata.txt with sets corresponding to your lotery.
 4. Run the application<br>
