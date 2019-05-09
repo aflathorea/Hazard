@@ -36,7 +36,7 @@ The application was written with Visual Studio Express 2012.<br>
 <br>
 How the algorithm is working?<br>
 Generates all the sets (14 millions) and intersect each set with the 10 sets from rawdata.txt file.<br>
-The intersection histogram represents an horizon.<br>
+The intersection histogram represents an horizon. There is a picture hazard_451.png, inside Docs directory, which shows how a histogram is created from intersections.<br>
 Based on the intersection histogram associate the sets with horizons.<br>
 Inside the horizons compute the neighbors of each set.<br>
 <br>
