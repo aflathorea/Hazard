@@ -37,5 +37,54 @@ To compile the project:<br>
 2. Navigate to Build directory. Now the current directory is Build.<br>
 3. cmake ./../Source<br>
 4. make<br>
-
-
+<br>
+How to fill rawdata.txt<br>
+The row zero is the header and it is ignored.<br>
+The first row is the most recent set in timeline. The next row is previous in timeline, and so one.<br>
+The mosts recents played are in the top and the sets played long time ago are in the bottom.<br>
+There are needed the lasts 10 sets played to run the application.<br>
+The structure of one row is splits in fields separated by comma.<br>
+The first field is the date, it is readed as a string and it is not processed.<br>
+The next 6 fields represents the numbers played for one set.<br>
+You can comment a row into the file starting the row with: --. <br>
+It is ignored a line like this:<br>
+--2018-09-13,42,20,3,34,31,13<br>
+<br>
+The output of the application are:<br>
+1. The summary file H55_02.YYYY-MM-DD.txt.<br>
+2. Multiple files H55_NEXT.YYYY-MM-DD_NNNN.txt called horizon file and contains the sets associated with an horizon.<br>
+<br>
+The summary file H55_02.YYYY-MM-DD.txt contains the list of all the possible horizons.<br> 
+It looks something like:<br>
+[4|5|1|0|0|0]. 745437<br>
+	(51,95859)(50,92895)(52,92176)(49,85872)(53,78607)(48,68809)(54,65477)(47,60979)(55,52425)(46,52338)<br>
+[5|4|1|0|0|0]. 740001<br>
+	(53,87620)(55,83351)(56,82600)(52,78869)(54,77948)(51,75280)(57,70398)(58,68536)(50,66290)(49,49109)<br>
+[4|4|2|0|0|0]. 631219<br>
+	(45,85095)(46,83282)(44,77671)(47,71317)(43,67162)(48,65903)(49,52011)(42,50431)(50,40253)(41,38094)<br>
+...<br>
+<br>
+Basically each horizon has 2 rows: one row for horizon one row for neighbours.<br>
+The first row has 2 fields: [4|5|1|0|0|0]. 745437. The first field is the horizon name and <br>
+the second number is number of sets in horizon.<br>
+The second row is for heighbours and has some pairs like: (51,95859)(50,92895)...<br>
+A pair: the first number is the numbers of neighbours, the second numbers is the count of sets having same number of neighbours.<br>
+Should be read like: <br>
+There are 95859 having 51 neighbours.<br>
+There are 92895 having 50 neighbours.<br>
+At the firsts sight, the horizons like: [4|5|1|0|0|0], [5|4|1|0|0|0], [4|4|2|0|0|0] have a bigger number of sets and are favorites to winning.<br>
+Basically the played sets can be in any horizon but there are favorite the horizons with bigger number of sets.<br>
+This is the reason why most of the time the winning horizons are from the top.<br>
+It is the user decision what horizon pick-up to play.<br>
+<br>
+The files like: H55_NEXT.YYYY-MM-DD_NNNN.txt contains the sets from horizon.<br>
+The sets for horizon [4|5|1|0|0|0] are in file H55_NEXT.YYYY-MM-DD_4510.txt.<br>
+The sets for horizon [5|4|1|0|0|0] are in file H55_NEXT.YYYY-MM-DD_5410.txt.<br>
+The structure of a row in the file H55_NEXT.YYYY-MM-DD_NNNN.txt is:<br>
+1-55. 12,13,23,28,32,41<br>
+The first number 1, is the current index, just a counter.<br>
+The second numbr 55 is the the number of neighbours.<br>
+The lasts number is the set: 12,13,23,28,32,41.<br>
+<br>
+It is the user decision what horizons pick-up and what sets pick-up to play.<br>
+There are favorites the horizon with a big numbers of sets and sets with a big number of neighbours.<br>
