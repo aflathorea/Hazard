@@ -20,13 +20,13 @@ The file should have, at least, 10 sets.<br>
 <br>
 Running options:<br>
 >hazard<br>
-This option does forecast. The run takes 1 minute.<br>
+This option does forecast. The run takes 2 minutes.<br>
 Produces the output: H55_02.YYYY-MM-DD.txt. This is a summary file which lists all the horizons.<br>
 A horizon means a group of sets having same statistic, 451 by example.<br>
 There are others files which contain the sets for each horizon.<br>
 If you do not know what to choose, choose the file H55_NEXT.YYYY-MM-DD_4510.txt and the firsts sets from the file.<br>
 >hazard h<br>
-This option does history analysis for last set. The run takes 1 minute.<br>
+This option does history analysis for last set. The run takes 2 minutes.<br>
 Produces the output: H55_01.YYYY-MM-DD.txt.<br>
 The rawdata.txt should contain 11 sets. It compares the first set from the top of the file against the others 10.<br>
 Use this option to check the accuracy of your predictions.<br>
