@@ -29,7 +29,7 @@ If you do not know what to choose, choose the file H55_NEXT.YYYY-MM-DD_4510.txt 
 >hazard h<br>
 This option does history analysis for last set. The run takes 5 minutes.<br>
 Produces the output: H55_01.YYYY-MM-DD.txt.<br>
-The rawdata.txt should contain 11 sets. It compares the 11th set against the others 10.<br>
+The rawdata.txt should contain 11 sets. It compares the first set, from the top of the file, against the others 10.<br>
 Use this option to check the accuracy of your predictions.<br>
 <br>
 The application was written with Visual Studio Express 2012.
