@@ -1,6 +1,10 @@
 #ifndef HSPEEDHIGH_H
 #define HSPEEDHIGH_H
 
+/*
+ * Contains functions executed milions of times.
+ */
+
 #include <vector>
 #include <deque>
 #include <map>
@@ -21,10 +25,10 @@ using namespace std;
 #define SERIES_STAT_INTERSECTION_MIN        2
 
 
-typedef unsigned long HSET;
-typedef deque<HSET> HSERIE;
+typedef unsigned long HSET; // The kernel of the algorithm. A number keeping a set of 6 numbers.
+typedef deque<HSET> HSERIE; // A series of sets.
 typedef unsigned long HDIV;
-typedef vector<HDIV> HSOLUTION;
+typedef vector<HDIV> HSOLUTION; // used in backgtracking when are generated all sets.
 typedef deque<pair<HSET, size_t>>  HSERIE_PAIR;
 
 

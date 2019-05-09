@@ -1,6 +1,10 @@
 #ifndef HSPEEDLOW_H
 #define HSPEEDLOW_H
 
+/*
+ * Contains functions executed few times, at the beginning and at the end of application.
+ */
+
 #include <cstring>
 #include <string>
 #include <cstdio>

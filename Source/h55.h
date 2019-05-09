@@ -17,6 +17,9 @@
 #define H55_HSET6_FILTER_NEIGHBOUR_SCORE_FIRSTS 10
 #define H55_FILE_NEXT_02                        "H55_NEXT.%s_%s.txt"
 
+/*
+ * Used to compute the neighbours.
+ */
 class H55HSet6
 {
 private:
@@ -39,7 +42,9 @@ public:
     bool filterByNeighbours(size_t score6[H55_HSET6_FILTER_NEIGHBOUR_SCORE_FIRSTS]);
 };
 
-
+/*
+ * Keeps an horizon.
+ */
 class H55Horizon : public HRunnable
 {
 private:
@@ -82,7 +87,13 @@ public:
     void log05(const string& date) const;
 };
 
-
+/*
+ * The main class of the application.
+ * 1.Generates all the sets (14 millions) and intersect each set with the 10 sets from rawdata.txt file.
+ *   The intersection statistic represents an horizon.
+ *   Based on the intersection associate the set with an horizon.
+ * 2.Inside the horizons compute the neighbors of each set.
+ */
 class H55
 {
 private:
@@ -124,7 +135,9 @@ public:
     void log05() const;
 };
 
-
+/*
+ * Unit test class.
+ */
 class H55UT01 : public HRunnable
 {
 private:
@@ -158,6 +171,9 @@ public:
 };
 
 
+/*
+ * Unit test class.
+ */
 class H55UT02
 {
 private:

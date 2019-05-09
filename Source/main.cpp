@@ -5,6 +5,10 @@
 
 using namespace std::chrono;
 
+/*
+ * Does history analysis. Needs in rawdata.txt 11 sets.
+ * Checks the set from the top with the next 10 sets.
+ */
 void h55History()
 {
     printf("exec55_01(). start.\n");
@@ -33,6 +37,9 @@ void h55History()
     printf("exec55_01(). end.\n");
 }
 
+/*
+ * Does forecast. Needs in rawdata.txt, 10 sets.
+ */
 void h55Forecast()
 {
     printf("exec55_02(). start.\n");
@@ -58,6 +65,10 @@ void h55Forecast()
     printf("exec55_02(). end.\n");
 }
 
+/*
+ * Same like h55History but for all sets from rawdata.txt.
+ * Takes a lot of time, depending how may sets are in rawdata.txt.
+ */
 void h55All()
 {
     printf("exec55_03(). start.\n");

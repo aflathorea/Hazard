@@ -8,6 +8,10 @@
 
 using namespace std;
 
+/*
+ * Write in files.
+ * Thread safe.
+ */
 class HLog
 {
 private:

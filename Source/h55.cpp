@@ -718,6 +718,9 @@ void H55::filterByStat(const deque<H55Horizon*>& lin , deque<H55Horizon*>& lout)
     }
 }
 
+/*
+ * The main function of H55.
+ */
 void H55::run()
 {
     if(mSerie.size() < H55_SERIE_SIZE_MIN)
