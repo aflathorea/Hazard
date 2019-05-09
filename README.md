@@ -32,7 +32,8 @@ Produces the output: H55_01.YYYY-MM-DD.txt.<br>
 The rawdata.txt should contain 11 sets. It compares the first set, from the top of the file, against the others 10.<br>
 Use this option to check the accuracy of your predictions.<br>
 <br>
-The application was written with Visual Studio Express 2012.
+The application was written with Visual Studio Express 2012.<br>
+<br>
 How to fill rawdata.txt<br>
 The row zero is the header and it is ignored.<br>
 The first row is the most recent set in timeline. The next row is previous in timeline, and so one.<br>
