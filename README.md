@@ -56,7 +56,7 @@ You can comment a row into the file starting the row with: --. <br>
 It is ignored a line like this:<br>
 --2018-09-13,42,20,3,34,31,13<br>
 <br>
-The output of the application are:<br>
+The outputs of the application are:<br>
 1. The summary file H55_02.YYYY-MM-DD.txt.<br>
 2. Multiple files H55_NEXT.YYYY-MM-DD_NNNN.txt called horizon file and contains the sets associated with an horizon.<br>
 <br>
