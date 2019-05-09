@@ -34,6 +34,12 @@ Use this option to check the accuracy of your predictions.<br>
 <br>
 The application was written with Visual Studio Express 2012.<br>
 <br>
+How the algorithm is working?<br>
+Generates all the sets (14 millions) and intersect each set with the 10 sets from rawdata.txt file.<br>
+The intersection histogram represents an horizon.<br>
+Based on the intersection histogram associate the sets with horizons.<br>
+Inside the horizons compute the neighbors of each set.<br>
+<br>
 How to fill rawdata.txt<br>
 The row zero is the header and it is ignored.<br>
 The first row is the most recent set in timeline. The next row is previous in timeline, and so one.<br>
